@@ -1,2 +1,2 @@
-# snapshot-sample
+# Snapshot Sample
 Snapshot study case
