@@ -1,3 +1,109 @@
-PODFILE CHECKSUM: f53830ce740429520dd41c89de3fdd1028eb179c
+PODS:
+  - Alamofire (4.9.0)
+  - iOSSnapshotTestCase (6.1.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.1.0)
+  - iOSSnapshotTestCase/Core (6.1.0)
+  - iOSSnapshotTestCase/SwiftSupport (6.1.0):
+    - iOSSnapshotTestCase/Core
+  - KIF (3.7.8):
+    - KIF/Core (= 3.7.8)
+  - KIF/Core (3.7.8)
+  - KIF/IdentifierTests (3.7.8):
+    - KIF/Core
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Moya/RxSwift (13.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - Nimble (8.0.4)
+  - Quick (2.2.0)
+  - R.swift (5.0.3):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.1)
+  - Result (4.1.0)
+  - Reusable (4.1.0):
+    - Reusable/Storyboard (= 4.1.0)
+    - Reusable/View (= 4.1.0)
+  - Reusable/Storyboard (4.1.0)
+  - Reusable/View (4.1.0)
+  - RxBlocking (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxGesture (2.2.0):
+    - RxCocoa (~> 4.5)
+    - RxSwift (~> 4.5)
+  - RxSwift (4.5.0)
+  - RxSwiftExt (3.4.0):
+    - RxSwiftExt/Core (= 3.4.0)
+    - RxSwiftExt/RxCocoa (= 3.4.0)
+  - RxSwiftExt/Core (3.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwiftExt/RxCocoa (3.4.0):
+    - RxCocoa (~> 4.0)
+    - RxSwiftExt/Core
+  - RxSwiftUtilities (2.1.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - SwiftLint (0.35.0)
+
+DEPENDENCIES:
+  - iOSSnapshotTestCase
+  - KIF
+  - KIF/IdentifierTests
+  - Moya/RxSwift
+  - Nimble
+  - Quick
+  - R.swift
+  - Reusable
+  - RxBlocking
+  - RxCocoa
+  - RxGesture
+  - RxSwift
+  - RxSwiftExt
+  - RxSwiftUtilities
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - iOSSnapshotTestCase
+    - KIF
+    - Moya
+    - Nimble
+    - Quick
+    - R.swift
+    - R.swift.Library
+    - Result
+    - Reusable
+    - RxBlocking
+    - RxCocoa
+    - RxGesture
+    - RxSwift
+    - RxSwiftExt
+    - RxSwiftUtilities
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  iOSSnapshotTestCase: 30d540b0c8feb9d7f8ff97acc25a3804b48ee264
+  KIF: 52e1af1a78cf6fe4ec6777b14776f3dd2eccc32e
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
+  R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
+  RxBlocking: 79413e4d916f44bb3e113c5b2cc059e36fe58910
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxGesture: c1b7bf17166b0ef9d642a9510f8bac5785f18990
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  RxSwiftExt: 01f8ecbeeb355698e9c75365ebe908b00dacf45d
+  RxSwiftUtilities: b486df7454cc867c3ea626ce24110511159e7044
+  SwiftLint: 5553187048b900c91aa03552807681bb6b027846
+
+PODFILE CHECKSUM: 592d7c493209990c2bc8a57e7e646828920033df
 
 COCOAPODS: 1.8.1
