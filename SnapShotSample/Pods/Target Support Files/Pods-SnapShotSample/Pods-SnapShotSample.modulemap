@@ -1,6 +1,0 @@
-framework module Pods_SnapShotSample {
-  umbrella header "Pods-SnapShotSample-umbrella.h"
-
-  export *
-  module * { export * }
-}
