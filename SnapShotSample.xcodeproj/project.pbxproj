@@ -3,20 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3A36E7514D4FF6B37C12D905 /* Pods_SnapShotSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8963315971F1D99080B0FA /* Pods_SnapShotSample.framework */; };
 		45D3F71ACE6487E9616B0D19 /* Pods_SnapShotSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F464E0FC1DDCF8FB9528E2 /* Pods_SnapShotSampleTests.framework */; };
 		ACC35EC92348E378006BA9DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35EC82348E378006BA9DB /* AppDelegate.swift */; };
-		ACC35ECB2348E378006BA9DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35ECA2348E378006BA9DB /* SceneDelegate.swift */; };
-		ACC35ECD2348E378006BA9DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35ECC2348E378006BA9DB /* ContentView.swift */; };
 		ACC35ECF2348E37A006BA9DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC35ECE2348E37A006BA9DB /* Assets.xcassets */; };
-		ACC35ED22348E37A006BA9DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC35ED12348E37A006BA9DB /* Preview Assets.xcassets */; };
 		ACC35ED52348E37A006BA9DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC35ED32348E37A006BA9DB /* LaunchScreen.storyboard */; };
 		ACC35EE02348E37B006BA9DB /* SnapShotSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35EDF2348E37B006BA9DB /* SnapShotSampleTests.swift */; };
 		ACC35EEB2348E37B006BA9DB /* SnapShotSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35EEA2348E37B006BA9DB /* SnapShotSampleUITests.swift */; };
+		ACC35EFB23497426006BA9DB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35EFA23497426006BA9DB /* Coordinator.swift */; };
+		ACC35EFD23497436006BA9DB /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35EFC23497436006BA9DB /* AppCoordinator.swift */; };
+		ACC35F02234976D6006BA9DB /* Rx + Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F00234976D5006BA9DB /* Rx + Utils.swift */; };
+		ACC35F03234976D6006BA9DB /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F01234976D6006BA9DB /* UIColor + Extensions.swift */; };
+		ACC35F0623497C48006BA9DB /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F0423497C48006BA9DB /* FeedViewModel.swift */; };
+		ACC35F0723497C48006BA9DB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F0523497C48006BA9DB /* FeedViewController.swift */; };
+		ACC35F0923497DE3006BA9DB /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F0823497DE2006BA9DB /* UIView+Constraints.swift */; };
+		ACC35F0B23497F05006BA9DB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F0A23497F05006BA9DB /* LoadingView.swift */; };
+		ACC35F10234982E8006BA9DB /* FeedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F0E234982E8006BA9DB /* FeedRepository.swift */; };
+		ACC35F11234982E8006BA9DB /* FeedRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F0F234982E8006BA9DB /* FeedRepositoryImpl.swift */; };
+		ACC35F15234982F9006BA9DB /* FeedServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F12234982F8006BA9DB /* FeedServiceImpl.swift */; };
+		ACC35F16234982F9006BA9DB /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F13234982F8006BA9DB /* FeedRouter.swift */; };
+		ACC35F17234982F9006BA9DB /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F14234982F9006BA9DB /* FeedService.swift */; };
+		ACC35F1A234A8E94006BA9DB /* GitRepositoty.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F19234A8E94006BA9DB /* GitRepositoty.swift */; };
+		ACC35F1C234A9883006BA9DB /* GitRepository.json in Resources */ = {isa = PBXBuildFile; fileRef = ACC35F1B234A9883006BA9DB /* GitRepository.json */; };
+		ACC35F1E234AA0D2006BA9DB /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F1D234AA0D2006BA9DB /* Data+Extensions.swift */; };
+		ACC35F20234AA17E006BA9DB /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F1F234AA17E006BA9DB /* Parser.swift */; };
+		ACC35F23234AA436006BA9DB /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F22234AA436006BA9DB /* RepositoryTableViewCell.swift */; };
+		ACC35F25234AA458006BA9DB /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F24234AA458006BA9DB /* Reusable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +59,7 @@
 		AC8963315971F1D99080B0FA /* Pods_SnapShotSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapShotSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC35EC52348E378006BA9DB /* SnapShotSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapShotSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC35EC82348E378006BA9DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACC35ECA2348E378006BA9DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ACC35ECC2348E378006BA9DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACC35ECE2348E37A006BA9DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ACC35ED12348E37A006BA9DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACC35ED42348E37A006BA9DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACC35ED62348E37A006BA9DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC35EDB2348E37B006BA9DB /* SnapShotSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapShotSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +68,25 @@
 		ACC35EE62348E37B006BA9DB /* SnapShotSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapShotSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC35EEA2348E37B006BA9DB /* SnapShotSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapShotSampleUITests.swift; sourceTree = "<group>"; };
 		ACC35EEC2348E37B006BA9DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACC35EFA23497426006BA9DB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		ACC35EFC23497436006BA9DB /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		ACC35F00234976D5006BA9DB /* Rx + Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Rx + Utils.swift"; sourceTree = "<group>"; };
+		ACC35F01234976D6006BA9DB /* UIColor + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
+		ACC35F0423497C48006BA9DB /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		ACC35F0523497C48006BA9DB /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		ACC35F0823497DE2006BA9DB /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		ACC35F0A23497F05006BA9DB /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		ACC35F0E234982E8006BA9DB /* FeedRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedRepository.swift; sourceTree = "<group>"; };
+		ACC35F0F234982E8006BA9DB /* FeedRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedRepositoryImpl.swift; sourceTree = "<group>"; };
+		ACC35F12234982F8006BA9DB /* FeedServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedServiceImpl.swift; sourceTree = "<group>"; };
+		ACC35F13234982F8006BA9DB /* FeedRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
+		ACC35F14234982F9006BA9DB /* FeedService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
+		ACC35F19234A8E94006BA9DB /* GitRepositoty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepositoty.swift; sourceTree = "<group>"; };
+		ACC35F1B234A9883006BA9DB /* GitRepository.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GitRepository.json; sourceTree = "<group>"; };
+		ACC35F1D234AA0D2006BA9DB /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		ACC35F1F234AA17E006BA9DB /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		ACC35F22234AA436006BA9DB /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		ACC35F24234AA458006BA9DB /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		B2461493B410A96E32094197 /* Pods-SnapShotSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapShotSample.release.xcconfig"; path = "Target Support Files/Pods-SnapShotSample/Pods-SnapShotSample.release.xcconfig"; sourceTree = "<group>"; };
 		BC4968CB0C264E502A0A3678 /* Pods-SnapShotSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapShotSample.debug.xcconfig"; path = "Target Support Files/Pods-SnapShotSample/Pods-SnapShotSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,23 +152,17 @@
 		ACC35EC72348E378006BA9DB /* SnapShotSample */ = {
 			isa = PBXGroup;
 			children = (
-				ACC35EC82348E378006BA9DB /* AppDelegate.swift */,
-				ACC35ECA2348E378006BA9DB /* SceneDelegate.swift */,
-				ACC35ECC2348E378006BA9DB /* ContentView.swift */,
-				ACC35ECE2348E37A006BA9DB /* Assets.xcassets */,
-				ACC35ED32348E37A006BA9DB /* LaunchScreen.storyboard */,
-				ACC35ED62348E37A006BA9DB /* Info.plist */,
-				ACC35ED02348E37A006BA9DB /* Preview Content */,
+				ACC35EF9234973CF006BA9DB /* Coordinator */,
+				ACC35EFE2349749E006BA9DB /* Modules */,
+				ACC35F0C23498261006BA9DB /* Repository */,
+				ACC35F0D2349828A006BA9DB /* Services */,
+				ACC35F21234AA3F7006BA9DB /* Views */,
+				ACC35F18234A8E4D006BA9DB /* Models */,
+				ACC35EFF23497553006BA9DB /* Utils */,
+				ACC35EF82349738C006BA9DB /* Resources */,
+				ACC35F0A23497F05006BA9DB /* LoadingView.swift */,
 			);
 			path = SnapShotSample;
-			sourceTree = "<group>";
-		};
-		ACC35ED02348E37A006BA9DB /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				ACC35ED12348E37A006BA9DB /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		ACC35EDE2348E37B006BA9DB /* SnapShotSampleTests */ = {
@@ -157,6 +183,84 @@
 			path = SnapShotSampleUITests;
 			sourceTree = "<group>";
 		};
+		ACC35EF82349738C006BA9DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ACC35EC82348E378006BA9DB /* AppDelegate.swift */,
+				ACC35ED62348E37A006BA9DB /* Info.plist */,
+				ACC35ED32348E37A006BA9DB /* LaunchScreen.storyboard */,
+				ACC35ECE2348E37A006BA9DB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ACC35EF9234973CF006BA9DB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				ACC35EFA23497426006BA9DB /* Coordinator.swift */,
+				ACC35EFC23497436006BA9DB /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		ACC35EFE2349749E006BA9DB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				ACC35F0523497C48006BA9DB /* FeedViewController.swift */,
+				ACC35F0423497C48006BA9DB /* FeedViewModel.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		ACC35EFF23497553006BA9DB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ACC35F0823497DE2006BA9DB /* UIView+Constraints.swift */,
+				ACC35F00234976D5006BA9DB /* Rx + Utils.swift */,
+				ACC35F01234976D6006BA9DB /* UIColor + Extensions.swift */,
+				ACC35F1D234AA0D2006BA9DB /* Data+Extensions.swift */,
+				ACC35F1F234AA17E006BA9DB /* Parser.swift */,
+				ACC35F24234AA458006BA9DB /* Reusable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		ACC35F0C23498261006BA9DB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				ACC35F0E234982E8006BA9DB /* FeedRepository.swift */,
+				ACC35F0F234982E8006BA9DB /* FeedRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		ACC35F0D2349828A006BA9DB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ACC35F13234982F8006BA9DB /* FeedRouter.swift */,
+				ACC35F14234982F9006BA9DB /* FeedService.swift */,
+				ACC35F12234982F8006BA9DB /* FeedServiceImpl.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ACC35F18234A8E4D006BA9DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACC35F19234A8E94006BA9DB /* GitRepositoty.swift */,
+				ACC35F1B234A9883006BA9DB /* GitRepository.json */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACC35F21234AA3F7006BA9DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACC35F22234AA436006BA9DB /* RepositoryTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DC77D8F6D82D8CAAAF84BFC7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +269,6 @@
 				9B6AA8A372119CB8F99DAEF3 /* Pods-SnapShotSampleTests.debug.xcconfig */,
 				4B9CC852823852A4E95C4822 /* Pods-SnapShotSampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -278,8 +381,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACC35ED52348E37A006BA9DB /* LaunchScreen.storyboard in Resources */,
-				ACC35ED22348E37A006BA9DB /* Preview Assets.xcassets in Resources */,
 				ACC35ECF2348E37A006BA9DB /* Assets.xcassets in Resources */,
+				ACC35F1C234A9883006BA9DB /* GitRepository.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,9 +488,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC35F0723497C48006BA9DB /* FeedViewController.swift in Sources */,
+				ACC35EFD23497436006BA9DB /* AppCoordinator.swift in Sources */,
+				ACC35F03234976D6006BA9DB /* UIColor + Extensions.swift in Sources */,
+				ACC35F15234982F9006BA9DB /* FeedServiceImpl.swift in Sources */,
+				ACC35F10234982E8006BA9DB /* FeedRepository.swift in Sources */,
+				ACC35F1E234AA0D2006BA9DB /* Data+Extensions.swift in Sources */,
+				ACC35F0623497C48006BA9DB /* FeedViewModel.swift in Sources */,
+				ACC35F1A234A8E94006BA9DB /* GitRepositoty.swift in Sources */,
+				ACC35F02234976D6006BA9DB /* Rx + Utils.swift in Sources */,
+				ACC35F23234AA436006BA9DB /* RepositoryTableViewCell.swift in Sources */,
+				ACC35F11234982E8006BA9DB /* FeedRepositoryImpl.swift in Sources */,
+				ACC35F16234982F9006BA9DB /* FeedRouter.swift in Sources */,
+				ACC35F17234982F9006BA9DB /* FeedService.swift in Sources */,
+				ACC35EFB23497426006BA9DB /* Coordinator.swift in Sources */,
 				ACC35EC92348E378006BA9DB /* AppDelegate.swift in Sources */,
-				ACC35ECB2348E378006BA9DB /* SceneDelegate.swift in Sources */,
-				ACC35ECD2348E378006BA9DB /* ContentView.swift in Sources */,
+				ACC35F0923497DE3006BA9DB /* UIView+Constraints.swift in Sources */,
+				ACC35F25234AA458006BA9DB /* Reusable.swift in Sources */,
+				ACC35F20234AA17E006BA9DB /* Parser.swift in Sources */,
+				ACC35F0B23497F05006BA9DB /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,10 +673,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SnapShotSample/Preview Content\"";
 				DEVELOPMENT_TEAM = C2WX94X8CG;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SnapShotSample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SnapShotSample/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,10 +693,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SnapShotSample/Preview Content\"";
 				DEVELOPMENT_TEAM = C2WX94X8CG;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SnapShotSample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SnapShotSample/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

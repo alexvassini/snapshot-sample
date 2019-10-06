@@ -6,12 +6,11 @@ def common_pods
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Moya/RxSwift'
-  pod 'Reusable'
   pod 'SwiftLint'
-  pod 'R.swift'
   pod 'RxGesture'
   pod 'RxSwiftUtilities'
   pod 'RxSwiftExt'
+  pod 'lottie-ios'
 end
 
 target 'SnapShotSample' do
