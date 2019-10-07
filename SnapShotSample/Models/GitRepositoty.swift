@@ -1,11 +1,3 @@
-//
-//  GitRepositoty.swift
-//  SnapShotSample
-//
-//  Created by Alexandre  Vassinievski on 06/10/19.
-//  Copyright © 2019 Alexandre  Vassinievski. All rights reserved.
-//
-
 struct GitRepositories: Codable {
     var totalCount: Int
     var items: [GitRepository]
@@ -25,6 +17,7 @@ struct GitRepository: Codable {
     var homePageUrl: String
     var description: String
     var owner: Owner
+    var stars: Int
 
     enum CodingKeys: String, CodingKey {
         case id
@@ -33,6 +26,7 @@ struct GitRepository: Codable {
         case homePageUrl = "html_url"
         case owner
         case description
+        case stars = "stargazers_count"
     }
 }
 

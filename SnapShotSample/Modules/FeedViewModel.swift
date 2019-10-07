@@ -1,11 +1,3 @@
-//
-//  FeedViewModel.swift
-//  TheMovieApp
-//
-//  Created by Alexandre Vassinievski Ribeiro on 21/02/19.
-//  Copyright © 2019 Alexandre Vassinievski Ribeiro. All rights reserved.
-//
-
 import RxSwift
 import RxCocoa
 import RxSwiftExt
@@ -46,7 +38,9 @@ class FeedViewModel {
             .elements()
             .startWith([])
         
-        self.results = moviesResult.scan([], accumulator: +).asDriver(onErrorJustReturn: [])
+        self.results = moviesResult.scan([], accumulator: +)
+            .asDriver(onErrorJustReturn: [])
+
         
     }
     

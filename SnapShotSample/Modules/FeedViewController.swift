@@ -1,11 +1,3 @@
-//
-//  FeedView.swift
-//  TheMovieApp
-//
-//  Created by Alexandre Vassinievski Ribeiro on 21/02/19.
-//  Copyright © 2019 Alexandre Vassinievski Ribeiro. All rights reserved.
-//
-
 import UIKit
 import RxSwift
 import RxCocoa
@@ -42,7 +34,7 @@ extension FeedViewController {
 
     func configureViews() {
 
-        //tableView.register(R.nib.feedTableViewCell)
+        tableView.register(RepositoryTableViewCell.self, forCellReuseIdentifier: RepositoryTableViewCell.reuseIdentifier)
         self.navigationItem.title = "Feed"
 
         view.addSubview(tableView)
@@ -63,7 +55,7 @@ extension FeedViewController {
             .drive(tableView.rx
                 .items(cellIdentifier: RepositoryTableViewCell.reuseIdentifier,
                        cellType: RepositoryTableViewCell.self)) { [unowned self] _ , item, cell in
-                        cell.bindView(item)
+                        cell.bindView(RepositoryTableViewCellViewModel(item: item))
                         if self.tableView.isNearBottomEdge(edgeOffset: 20) {
                             self.viewModel.requestTrigger.onNext(())
                         }

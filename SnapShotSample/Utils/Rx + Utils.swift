@@ -17,7 +17,7 @@ extension Reactive where Base: Any {
 public extension Reactive where Base: Any {
     
     /// a unique DisposeBag that is related to the Reactive.Base instance only for Reference type
-    public var disposeBag: DisposeBag {
+    var disposeBag: DisposeBag {
         get {
             return synchronizedBag {
                 if let disposeObject = objc_getAssociatedObject(base, &disposeBagContext) as? DisposeBag {

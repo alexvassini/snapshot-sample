@@ -33,6 +33,8 @@
 		ACC35F20234AA17E006BA9DB /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F1F234AA17E006BA9DB /* Parser.swift */; };
 		ACC35F23234AA436006BA9DB /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F22234AA436006BA9DB /* RepositoryTableViewCell.swift */; };
 		ACC35F25234AA458006BA9DB /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F24234AA458006BA9DB /* Reusable.swift */; };
+		ACC35F28234AD059006BA9DB /* Fonts+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F27234AD059006BA9DB /* Fonts+Extensions.swift */; };
+		ACC35F2A234AD3EB006BA9DB /* RepositoryTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35F29234AD3EB006BA9DB /* RepositoryTableViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		ACC35F1F234AA17E006BA9DB /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		ACC35F22234AA436006BA9DB /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		ACC35F24234AA458006BA9DB /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		ACC35F27234AD059006BA9DB /* Fonts+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Extensions.swift"; sourceTree = "<group>"; };
+		ACC35F29234AD3EB006BA9DB /* RepositoryTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		B2461493B410A96E32094197 /* Pods-SnapShotSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapShotSample.release.xcconfig"; path = "Target Support Files/Pods-SnapShotSample/Pods-SnapShotSample.release.xcconfig"; sourceTree = "<group>"; };
 		BC4968CB0C264E502A0A3678 /* Pods-SnapShotSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapShotSample.debug.xcconfig"; path = "Target Support Files/Pods-SnapShotSample/Pods-SnapShotSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,6 +225,7 @@
 				ACC35F1D234AA0D2006BA9DB /* Data+Extensions.swift */,
 				ACC35F1F234AA17E006BA9DB /* Parser.swift */,
 				ACC35F24234AA458006BA9DB /* Reusable.swift */,
+				ACC35F27234AD059006BA9DB /* Fonts+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				ACC35F22234AA436006BA9DB /* RepositoryTableViewCell.swift */,
+				ACC35F29234AD3EB006BA9DB /* RepositoryTableViewCellViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -490,6 +496,7 @@
 			files = (
 				ACC35F0723497C48006BA9DB /* FeedViewController.swift in Sources */,
 				ACC35EFD23497436006BA9DB /* AppCoordinator.swift in Sources */,
+				ACC35F28234AD059006BA9DB /* Fonts+Extensions.swift in Sources */,
 				ACC35F03234976D6006BA9DB /* UIColor + Extensions.swift in Sources */,
 				ACC35F15234982F9006BA9DB /* FeedServiceImpl.swift in Sources */,
 				ACC35F10234982E8006BA9DB /* FeedRepository.swift in Sources */,
@@ -497,6 +504,7 @@
 				ACC35F0623497C48006BA9DB /* FeedViewModel.swift in Sources */,
 				ACC35F1A234A8E94006BA9DB /* GitRepositoty.swift in Sources */,
 				ACC35F02234976D6006BA9DB /* Rx + Utils.swift in Sources */,
+				ACC35F2A234AD3EB006BA9DB /* RepositoryTableViewCellViewModel.swift in Sources */,
 				ACC35F23234AA436006BA9DB /* RepositoryTableViewCell.swift in Sources */,
 				ACC35F11234982E8006BA9DB /* FeedRepositoryImpl.swift in Sources */,
 				ACC35F16234982F9006BA9DB /* FeedRouter.swift in Sources */,

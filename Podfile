@@ -11,6 +11,7 @@ def common_pods
   pod 'RxSwiftUtilities'
   pod 'RxSwiftExt'
   pod 'lottie-ios'
+  pod 'AlamofireImage'
 end
 
 target 'SnapShotSample' do

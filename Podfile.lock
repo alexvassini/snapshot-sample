@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.9.0)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
   - iOSSnapshotTestCase (6.1.0):
     - iOSSnapshotTestCase/SwiftSupport (= 6.1.0)
   - iOSSnapshotTestCase/Core (6.1.0)
@@ -42,6 +44,7 @@ PODS:
   - SwiftLint (0.35.0)
 
 DEPENDENCIES:
+  - AlamofireImage
   - iOSSnapshotTestCase
   - KIF
   - KIF/IdentifierTests
@@ -60,6 +63,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AlamofireImage
     - iOSSnapshotTestCase
     - KIF
     - lottie-ios
@@ -77,6 +81,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
   iOSSnapshotTestCase: 30d540b0c8feb9d7f8ff97acc25a3804b48ee264
   KIF: 52e1af1a78cf6fe4ec6777b14776f3dd2eccc32e
   lottie-ios: 496ac5cea1bbf1a7bd1f1f472f3232eb1b8d744b
@@ -92,6 +97,6 @@ SPEC CHECKSUMS:
   RxSwiftUtilities: b486df7454cc867c3ea626ce24110511159e7044
   SwiftLint: 5553187048b900c91aa03552807681bb6b027846
 
-PODFILE CHECKSUM: aa076b1e678806d709b4f211d56117a504fac61c
+PODFILE CHECKSUM: 47e0dcd195af44869206be849177c5a89a6d46d3
 
 COCOAPODS: 1.8.1
