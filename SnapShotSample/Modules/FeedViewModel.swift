@@ -2,7 +2,7 @@ import RxSwift
 import RxCocoa
 import RxSwiftExt
 import RxSwiftUtilities
-
+import Moya
 
 class FeedViewModel {
     
@@ -10,6 +10,7 @@ class FeedViewModel {
     
     let results: Driver<[GitRepository]>
     let isLoading: Driver<Bool>
+    let error: Observable<RequestError?>
     let requestTrigger: PublishSubject<Void> = PublishSubject()
     
     init(repository: FeedRepository = FeedRepositoryImpl()) {
@@ -34,14 +35,20 @@ class FeedViewModel {
                 .trackActivity(loadingIndicator)
             }.materialize()
         
-        let moviesResult = response
+        let feedResult = response
             .elements()
             .startWith([])
         
-        self.results = moviesResult.scan([], accumulator: +)
+        self.results = feedResult
+            .scan([], accumulator: +)
             .asDriver(onErrorJustReturn: [])
 
-        
+        self.error = response
+            .errors()
+            .map { $0 as? MoyaError }
+            .unwrap()
+            .mapError(RequestError.self)
+
     }
     
 }

@@ -10,7 +10,9 @@ class FeedViewController: UIViewController {
     weak var delegate: AppActionable?
 
     private var tableView: UITableView = {
-        return UITableView()
+        let tableView = UITableView()
+        tableView.separatorStyle = .none
+        return tableView
     }()
 
     init(viewModel: FeedViewModel = .init()) {

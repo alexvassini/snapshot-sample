@@ -28,7 +28,7 @@ class RepositoryTableViewCellViewModel {
         if item.stars < 1000 {
             return "⭐️\(item.stars)"
         }
-        return "⭐️\(Float(item.stars/100))k"
+        return "⭐️\(Float(item.stars/1000))k"
     }
     
 }
