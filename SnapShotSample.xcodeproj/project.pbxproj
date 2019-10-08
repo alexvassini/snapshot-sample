@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3A36E7514D4FF6B37C12D905 /* Pods_SnapShotSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8963315971F1D99080B0FA /* Pods_SnapShotSample.framework */; };
 		45D3F71ACE6487E9616B0D19 /* Pods_SnapShotSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F464E0FC1DDCF8FB9528E2 /* Pods_SnapShotSampleTests.framework */; };
+		AC0A0452234CC34B006B5132 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0A0451234CC34B006B5132 /* XCTestCase+Extensions.swift */; };
+		AC0A0454234CDB95006B5132 /* RepositoryTableViewCellSnapShotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0A0453234CDB95006B5132 /* RepositoryTableViewCellSnapShotTests.swift */; };
 		ACC35EC92348E378006BA9DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC35EC82348E378006BA9DB /* AppDelegate.swift */; };
 		ACC35ECF2348E37A006BA9DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC35ECE2348E37A006BA9DB /* Assets.xcassets */; };
 		ACC35ED52348E37A006BA9DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC35ED32348E37A006BA9DB /* LaunchScreen.storyboard */; };
@@ -64,6 +66,8 @@
 		4B9CC852823852A4E95C4822 /* Pods-SnapShotSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapShotSampleTests.release.xcconfig"; path = "Target Support Files/Pods-SnapShotSampleTests/Pods-SnapShotSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		86F464E0FC1DDCF8FB9528E2 /* Pods_SnapShotSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapShotSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6AA8A372119CB8F99DAEF3 /* Pods-SnapShotSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapShotSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-SnapShotSampleTests/Pods-SnapShotSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC0A0451234CC34B006B5132 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
+		AC0A0453234CDB95006B5132 /* RepositoryTableViewCellSnapShotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCellSnapShotTests.swift; sourceTree = "<group>"; };
 		AC8963315971F1D99080B0FA /* Pods_SnapShotSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapShotSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC35EC52348E378006BA9DB /* SnapShotSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapShotSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC35EC82348E378006BA9DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +191,7 @@
 				ACC35F2F234C2418006BA9DB /* Modules */,
 				ACC35F32234C24C8006BA9DB /* Cells */,
 				ACC35EE12348E37B006BA9DB /* Info.plist */,
+				AC0A0451234CC34B006B5132 /* XCTestCase+Extensions.swift */,
 			);
 			path = SnapShotSampleTests;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 			children = (
 				ACC35F33234C24DB006BA9DB /* RepositoryTableViewCellTests.swift */,
 				ACC35F39234C293B006BA9DB /* RepositoryTableViewCellViewModelTests.swift */,
+				AC0A0453234CDB95006B5132 /* RepositoryTableViewCellSnapShotTests.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -561,8 +567,10 @@
 			files = (
 				ACC35F2C234BFBCB006BA9DB /* FeedViewModelTests.swift in Sources */,
 				ACC35F3A234C293B006BA9DB /* RepositoryTableViewCellViewModelTests.swift in Sources */,
+				AC0A0452234CC34B006B5132 /* XCTestCase+Extensions.swift in Sources */,
 				ACC35F31234C2430006BA9DB /* FeedViewControllerTests.swift in Sources */,
 				ACC35F34234C24DB006BA9DB /* RepositoryTableViewCellTests.swift in Sources */,
+				AC0A0454234CDB95006B5132 /* RepositoryTableViewCellSnapShotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

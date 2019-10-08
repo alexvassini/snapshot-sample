@@ -5,11 +5,11 @@ import RxCocoa
 class FeedViewController: UIViewController {
 
     let viewModel: FeedViewModel
-    let loadingView = LoadingView()
+    var loadingView = LoadingView()
 
     weak var delegate: AppActionable?
 
-    private var tableView: UITableView = {
+    var tableView: UITableView = {
         let tableView = UITableView()
         tableView.separatorStyle = .none
         return tableView
@@ -29,7 +29,6 @@ class FeedViewController: UIViewController {
         self.configureViews()
         self.setupBindings()
     }
-    
 }
 
 extension FeedViewController {

@@ -16,7 +16,6 @@ class LoadingView: UIView {
 
     var lottieView: AnimationView?
 
-
     override func layoutSubviews() {
         super.layoutSubviews()
         self.setupViews()

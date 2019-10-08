@@ -9,7 +9,7 @@ class FeedViewModel {
     let repository: FeedRepository
     
     let results: Driver<[GitRepository]>
-    let isLoading: Driver<Bool>
+    var isLoading: Driver<Bool>
     let error: Observable<RequestError?>
     let requestTrigger: PublishSubject<Void> = PublishSubject()
     
